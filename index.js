@@ -94,7 +94,7 @@ const logToJsx = (message) => {
 
 // Create an HTTP server to serve the JSX code
 const server = http.createServer((req, res) => {
-  if (req.url === '/log') {
+  if (req.url === '/') {
     const jsxMessage = logToJsx('Bot is running and sending polls at 07:00 AM and 08:00 PM on weekdays!');
     const html = `
     <!DOCTYPE html>
